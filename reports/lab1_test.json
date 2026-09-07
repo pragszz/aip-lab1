@@ -1,0 +1,2311 @@
+{
+  "name": "lab1-c-test",
+  "started_at": "2026-09-02 15:41:20",
+  "n": 120,
+  "aggregate": {
+    "error": 1.0,
+    "field.category": 0.8846153846153846,
+    "field.contains_pii": 1.0,
+    "field.escalate": 0.9423076923076923,
+    "field.language": 1.0,
+    "field.policy_number": 1.0,
+    "field.product": 1.0,
+    "field.sentiment": 0.8269230769230769,
+    "field.urgency": 0.7115384615384616,
+    "field_accuracy": 0.9206730769230769,
+    "needs_review": 0.0,
+    "record_accuracy": 0.5,
+    "schema_valid": 1.0,
+    "error_rate": 0.5666666666666667
+  },
+  "budget": {
+    "label": "lab1-c-test",
+    "calls": 52,
+    "cached_calls": 0,
+    "prompt_tokens": 93906,
+    "completion_tokens": 3698,
+    "cost_usd": 0.037417,
+    "unpriced_calls": 0,
+    "unpriced_models": [],
+    "latency_p50_ms": 1149.1,
+    "latency_p95_ms": 1599.7
+  },
+  "results": [
+    {
+      "id": "T0235",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 3572.0,
+      "output": {
+        "evidence": "Please add my spouse to policy my policy. What documents are needed?",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0190",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 3455.4,
+      "output": {
+        "evidence": "Can you confirm the restoration benefit is still available this year on AUR-2167410?",
+        "category": "information",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-2167410",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0049",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 3267.8,
+      "output": {
+        "evidence": "The Aurora app crashes every time I try to upload a document",
+        "category": "technical",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "gold",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-7089616",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0047",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 3049.9,
+      "output": {
+        "evidence": "How do I change the registered mobile number and email on policy AUR-8471271? I am on the Aurora Platinum plan.",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "platinum",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-8471271",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0208",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1596.0,
+      "output": {
+        "evidence": "Kripya add my mother as a dependent on my Aurora Bronze policy. She is 63. What will the premium impact be? Jaldi karo please.",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "bronze",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0009",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1014.8,
+      "output": {
+        "evidence": "How do I submit the post-hospitalisation bills",
+        "category": "claims",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-8548571",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0177",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1358.0,
+      "output": {
+        "evidence": "The Aurora app crashes every time I try to upload a document",
+        "category": "technical",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-1566695",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0109",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1244.6,
+      "output": {
+        "evidence": "I want to upgrade from my current plan to a higher sum insured on AUR-1710478 at renewal. Will my waiting periods carry over?",
+        "category": "policy_change",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-1710478",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0088",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 973.5,
+      "output": {
+        "evidence": "The grievance I raised 11 days ago on AUR-4870006 was closed without anyone contacting me. Please reopen it and assign a GRO.",
+        "category": "complaint",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-4870006",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0144",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1116.4,
+      "output": {
+        "evidence": "Please ADD MY MOTHER AS a dependent on AUR-1276614. She is 63. What will teh premium impact be?",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-1276614",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0058",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1241.7,
+      "output": {
+        "evidence": "I am on the Aurora Platinum plan.",
+        "category": "information",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "platinum",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-5100579",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0093",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1145.7,
+      "output": {
+        "evidence": "Thanks for settling my claim on AUR-3707429 so quickly. Just wanted to confirm whether my no-claim bonus is affected by this claim.",
+        "category": "claims",
+        "urgency": 1,
+        "sentiment": "satisfied",
+        "product": "platinum",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-3707429",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0232",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1104.8,
+      "output": {
+        "evidence": "What is proportionate deduction and why does it apply to me? I am on the Aurora Bronze plan. Koi solution batayiye.",
+        "category": "claims",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "bronze",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": "AUR-6253167",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0202",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1096.5,
+      "output": {
+        "evidence": "You have REJECTED my claim on AUR-8183618 without giving any clause.",
+        "category": "claims",
+        "urgency": 5,
+        "sentiment": "angry",
+        "product": "gold",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-8183618",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0129",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1285.3,
+      "output": {
+        "evidence": "THIS IS THE THIRD TIME I am writing about the double debit on AUR-8245978.",
+        "category": "billing",
+        "urgency": 4,
+        "sentiment": "angry",
+        "product": "unknown",
+        "language": "hi-en",
+        "escalate": true,
+        "policy_number": "AUR-8245978",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0060",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1321.1,
+      "output": {
+        "evidence": "Does the policy cover AYUSH treatment at a government hospital?",
+        "category": "information",
+        "urgency": 1,
+        "sentiment": "angry",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0180",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 23.228604406s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"23s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10063.4,
+      "output": null
+    },
+    {
+      "id": "T0178",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 23.826051766s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"23s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8967.0,
+      "output": null
+    },
+    {
+      "id": "T0092",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 24.336489354s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"24s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8048.1,
+      "output": null
+    },
+    {
+      "id": "T0050",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 22.216888384s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"22s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10030.1,
+      "output": null
+    },
+    {
+      "id": "T0079",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.992247911s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"11s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 12396.1,
+      "output": null
+    },
+    {
+      "id": "T0210",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.894087431s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"14s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8909.5,
+      "output": null
+    },
+    {
+      "id": "T0185",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 12.418156695s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"12s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10806.1,
+      "output": null
+    },
+    {
+      "id": "T0216",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 15.4248318s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"15s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 6789.7,
+      "output": null
+    },
+    {
+      "id": "T0043",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 8.620728092s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"8s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 6815.6,
+      "output": null
+    },
+    {
+      "id": "T0218",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 6.145262557s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"6s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8737.9,
+      "output": null
+    },
+    {
+      "id": "T0193",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 3.491079507s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"3s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8914.2,
+      "output": null
+    },
+    {
+      "id": "T0101",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 3.039020425s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"3s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8929.3,
+      "output": null
+    },
+    {
+      "id": "T0098",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 1.332864861s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"1s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7279.0,
+      "output": null
+    },
+    {
+      "id": "T0099",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 55.822607081s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"55s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10334.2,
+      "output": null
+    },
+    {
+      "id": "T0085",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 54.589956665s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"54s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8894.9,
+      "output": null
+    },
+    {
+      "id": "T0133",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 49.658990273s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"49s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 13352.2,
+      "output": null
+    },
+    {
+      "id": "T0038",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 53.908765886s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"53s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7426.4,
+      "output": null
+    },
+    {
+      "id": "T0105",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 48.044949259s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"48s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7772.0,
+      "output": null
+    },
+    {
+      "id": "T0155",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 45.958012461s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"45s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8635.9,
+      "output": null
+    },
+    {
+      "id": "T0172",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 42.07349107s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"42s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 11862.8,
+      "output": null
+    },
+    {
+      "id": "T0121",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 41.664279467s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"41s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8001.1,
+      "output": null
+    },
+    {
+      "id": "T0182",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 40.681992618s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"40s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7361.4,
+      "output": null
+    },
+    {
+      "id": "T0094",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 39.277202692s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"39s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 6676.4,
+      "output": null
+    },
+    {
+      "id": "T0004",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 5053.7,
+      "output": {
+        "evidence": "The auto-debit mandate for AUR-3260139 failed again even though there was balance in the account.",
+        "category": "billing",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-3260139",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0026",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 9034.8,
+      "output": {
+        "evidence": "Is teleconsultation included in my plan or do I need THE OPD RIDER?",
+        "category": "information",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-6275061",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0181",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 5750.4,
+      "output": {
+        "evidence": "TRYING TO SHOW MY Aurora Silver poilcy my policy.",
+        "category": "technical",
+        "urgency": 4,
+        "sentiment": "angry",
+        "product": "silver",
+        "language": "en",
+        "escalate": true,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0212",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 2819.5,
+      "output": {
+        "evidence": "Where can I download my e-card for policy AUR-6458797? I cannot find it in the app.",
+        "category": "technical",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-6458797",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0198",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 0.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.75,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 939.7,
+      "output": {
+        "evidence": "Claim reference CLM-4200 on policy AUR-7530057 has been pending for 30 days.",
+        "category": "claims",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "unknown",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": "AUR-7530057",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0143",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1122.7,
+      "output": {
+        "evidence": "How do I change teh registered mobile number and email on poilcy AUR-7276919? I am on teh Aurora Gold plan.",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "gold",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-7276919",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0084",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 2385.4,
+      "output": {
+        "evidence": "Where can I download my e-card for policy my Aurora Bronze policy?",
+        "category": "technical",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "bronze",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0016",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1206.7,
+      "output": {
+        "evidence": "Please add my mother as a dependent on AUR-4171174. She is 63. What will the premium impact be? I am on the Aurora Silver plan. \ud83d\ude21",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "angry",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-4171174",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0163",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 922.5,
+      "output": {
+        "evidence": "What are the instalment options available on my policy AUR-9317842? Currently paying annually.",
+        "category": "billing",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-9317842",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0090",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1016.1,
+      "output": {
+        "evidence": "Is teleconsultation included in my plan or do I need teh OPD rider?",
+        "category": "information",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-6729253",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0114",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1214.6,
+      "output": {
+        "evidence": "I cannot reset my portal password for AUR-2848074.",
+        "category": "technical",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-2848074",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0184",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1178.1,
+      "output": {
+        "evidence": "The grievance I raised 5 days ago on AUR-2012575 was closed without anyone contacting me.",
+        "category": "complaint",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-2012575",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0074",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 928.1,
+      "output": {
+        "evidence": "You have REJECTED my claim on AUR-6014148 without giving any clause.",
+        "category": "claims",
+        "urgency": 5,
+        "sentiment": "angry",
+        "product": "unknown",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-6014148",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0237",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1002.4,
+      "output": {
+        "evidence": "I am on teh Aurora Silver plan.",
+        "category": "policy_change",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-3224901",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0152",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 0.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.75,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1113.5,
+      "output": {
+        "evidence": "The grievance I raised 21 days ago on AUR-4718001 was closed without anyone contacting me.",
+        "category": "complaint",
+        "urgency": 4,
+        "sentiment": "frustrated",
+        "product": "unknown",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-4718001",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0134",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 0.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.75,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1459.0,
+      "output": {
+        "evidence": "Claim reference CLM-41800 on policy AUR-1244968 has been pending for 14 days.",
+        "category": "claims",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "bronze",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": "AUR-1244968",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0017",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 22.068581868s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"22s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10105.3,
+      "output": null
+    },
+    {
+      "id": "T0075",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 24.071784481s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"24s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7725.1,
+      "output": null
+    },
+    {
+      "id": "T0051",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 21.302137331s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"21s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10196.3,
+      "output": null
+    },
+    {
+      "id": "T0228",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 20.492018277s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"20s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10542.4,
+      "output": null
+    },
+    {
+      "id": "T0106",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.21136486s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"13s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10866.8,
+      "output": null
+    },
+    {
+      "id": "T0023",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.615640616s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"14s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7471.0,
+      "output": null
+    },
+    {
+      "id": "T0150",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.105091306s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"11s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10201.5,
+      "output": null
+    },
+    {
+      "id": "T0219",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.562808597s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"13s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 6921.7,
+      "output": null
+    },
+    {
+      "id": "T0076",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 4.676235301s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"4s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9919.4,
+      "output": null
+    },
+    {
+      "id": "T0227",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 6.078717213s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"6s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7490.0,
+      "output": null
+    },
+    {
+      "id": "T0217",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 5.49213824s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"5s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7709.4,
+      "output": null
+    },
+    {
+      "id": "T0118",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 471.073386ms.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"0s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10628.5,
+      "output": null
+    },
+    {
+      "id": "T0030",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 56.781833263s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"56s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9307.2,
+      "output": null
+    },
+    {
+      "id": "T0018",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 57.845066522s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"57s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7652.6,
+      "output": null
+    },
+    {
+      "id": "T0014",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 57.508587846s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"57s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7213.7,
+      "output": null
+    },
+    {
+      "id": "T0125",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 55.654331376s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"55s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 4826.7,
+      "output": null
+    },
+    {
+      "id": "T0126",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 47.143355134s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"47s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10685.4,
+      "output": null
+    },
+    {
+      "id": "T0170",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 46.726434427s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"46s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10752.2,
+      "output": null
+    },
+    {
+      "id": "T0120",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 48.809917167s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"48s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7962.4,
+      "output": null
+    },
+    {
+      "id": "T0157",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 46.979533991s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"46s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8690.6,
+      "output": null
+    },
+    {
+      "id": "T0072",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 40.509847229s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"40s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8304.1,
+      "output": null
+    },
+    {
+      "id": "T0083",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 10634.8,
+      "output": {
+        "evidence": "The hospital locator on the app shows zero results for my city.",
+        "category": "technical",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-6322910",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0161",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 37.903953203s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"37s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9056.5,
+      "output": null
+    },
+    {
+      "id": "T0012",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 12354.2,
+      "output": {
+        "evidence": "Please add my newborn daughter to AUR-7582913. She was born 11 days ago.",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-7582913",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0073",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 6221.8,
+      "output": {
+        "evidence": "How do I submit the post-hospitalisation bills for AUR-6575967? I am on the Aurora Silver plan.",
+        "category": "claims",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-6575967",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0127",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1927.4,
+      "output": {
+        "evidence": "How many wellness points do I currently have on AUR-5106404 and what discount does that give me?",
+        "category": "billing",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-5106404",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0061",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 848.9,
+      "output": {
+        "evidence": "Just wanted to confirm whether my no-claim bonus is affected by this claim.",
+        "category": "claims",
+        "urgency": 1,
+        "sentiment": "satisfied",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0005",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 2208.6,
+      "output": {
+        "evidence": "My father is admitted in ICU right now and the hospital says cashless is DENIED on AUR-7026311.",
+        "category": "claims",
+        "urgency": 5,
+        "sentiment": "neutral",
+        "product": "platinum",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-7026311",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0229",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1990.1,
+      "output": {
+        "evidence": "My father is admitted in ICU right now and the hospital says cashless is DENIED on my Aurora Gold policy.",
+        "category": "claims",
+        "urgency": 5,
+        "sentiment": "neutral",
+        "product": "gold",
+        "language": "en",
+        "escalate": true,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0179",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 895.0,
+      "output": {
+        "evidence": "The hospital locator on the app shows zero results for my city.",
+        "category": "technical",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "unknown",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": "AUR-1282122",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0119",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1107.5,
+      "output": {
+        "evidence": "I am filing a complaint with the ombudsman.",
+        "category": "complaint",
+        "urgency": 5,
+        "sentiment": "angry",
+        "product": "unknown",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-3064890",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0057",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.625,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 918.0,
+      "output": {
+        "evidence": "The network hospital refused cashless saying you have not settled their dues.",
+        "category": "claims",
+        "urgency": 5,
+        "sentiment": "angry",
+        "product": "silver",
+        "language": "en",
+        "escalate": true,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0135",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1121.8,
+      "output": {
+        "evidence": "What documents do I need to submit for reimbursement of a day-care procedure under AUR-7167645?",
+        "category": "claims",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-7167645",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0022",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.75,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1151.7,
+      "output": {
+        "evidence": "Koi solution batayiye.",
+        "category": "billing",
+        "urgency": 4,
+        "sentiment": "angry",
+        "product": "gold",
+        "language": "hi-en",
+        "escalate": true,
+        "policy_number": null,
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0066",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1022.4,
+      "output": {
+        "evidence": "This needs to be resolved before tomorrow morning.",
+        "category": "billing",
+        "urgency": 3,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-3454055",
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0206",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1046.3,
+      "output": {
+        "evidence": "Koi solution batayiye.",
+        "category": "policy_change",
+        "urgency": 3,
+        "sentiment": "frustrated",
+        "product": "bronze",
+        "language": "hi-en",
+        "escalate": false,
+        "policy_number": "AUR-5474891",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0221",
+      "metrics": {
+        "field.category": 0.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 0.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.75,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 908.8,
+      "output": {
+        "evidence": "Just wanted to confirm whether my no-claim bonus is affected by this claim.",
+        "category": "claims",
+        "urgency": 1,
+        "sentiment": "neutral",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-1460130",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0213",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 1263.3,
+      "output": {
+        "evidence": "Your portal has been down all morning and I am standing at the HOSPITAL INSURANCE DESK TRYING to show my Aurora Platinum policy",
+        "category": "technical",
+        "urgency": 5,
+        "sentiment": "angry",
+        "product": "platinum",
+        "language": "en",
+        "escalate": true,
+        "policy_number": "AUR-4418874",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0148",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 21.961257018s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"21s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10196.6,
+      "output": null
+    },
+    {
+      "id": "T0224",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 21.776524171s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"21s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10047.3,
+      "output": null
+    },
+    {
+      "id": "T0031",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 22.372294769s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"22s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9312.9,
+      "output": null
+    },
+    {
+      "id": "T0159",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 23.760250429s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"23s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7303.3,
+      "output": null
+    },
+    {
+      "id": "T0113",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.121079903s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"14s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9641.3,
+      "output": null
+    },
+    {
+      "id": "T0096",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 9.201676303s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"9s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 13140.3,
+      "output": null
+    },
+    {
+      "id": "T0019",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.662093284s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"11s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10294.4,
+      "output": null
+    },
+    {
+      "id": "T0160",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 10.587734714s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"10s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 11175.3,
+      "output": null
+    },
+    {
+      "id": "T0042",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 6.072166288s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"6s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8139.6,
+      "output": null
+    },
+    {
+      "id": "T0141",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 1.401324374s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"1s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 10272.9,
+      "output": null
+    },
+    {
+      "id": "T0002",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 5.355573505s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"5s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 5232.4,
+      "output": null
+    },
+    {
+      "id": "T0138",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 2.784707873s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"2s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 6417.8,
+      "output": null
+    },
+    {
+      "id": "T0077",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 58.374624994s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"58s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7601.5,
+      "output": null
+    },
+    {
+      "id": "T0089",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 57.580935651s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"57s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7768.7,
+      "output": null
+    },
+    {
+      "id": "T0064",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 55.467624704s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"55s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7321.0,
+      "output": null
+    },
+    {
+      "id": "T0154",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 52.115226768s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"52s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9278.5,
+      "output": null
+    },
+    {
+      "id": "T0140",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 49.385913191s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"49s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9047.1,
+      "output": null
+    },
+    {
+      "id": "T0189",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 50.158520775s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"50s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 7424.0,
+      "output": null
+    },
+    {
+      "id": "T0136",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 49.706756806s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"49s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 5749.1,
+      "output": null
+    },
+    {
+      "id": "T0209",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 42.797117714s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"42s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9321.9,
+      "output": null
+    },
+    {
+      "id": "T0082",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 40.566084988s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-3.5-flash-lite\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"40s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 9590.9,
+      "output": null
+    },
+    {
+      "id": "T0147",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 41.201072458s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"41s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8521.9,
+      "output": null
+    },
+    {
+      "id": "T0107",
+      "metrics": {
+        "error": 1.0
+      },
+      "error": "RateLimitError: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 40.719292555s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-3.5-flash-lite\"\n            },\n            \"quotaValue\": \"15\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"40s\"\n      }\n    ]\n  }\n}\n",
+      "latency_ms": 8601.7,
+      "output": null
+    },
+    {
+      "id": "T0139",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 9008.4,
+      "output": {
+        "evidence": "Please add my spouse to poilcy AUR-2840778. What documents are needed? I am on teh Aurora Gold plan.",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "gold",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-2840778",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0203",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 6411.5,
+      "output": {
+        "evidence": "Please add my spouse to policy AUR-4308552. What documents are needed?",
+        "category": "policy_change",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "platinum",
+        "language": "en",
+        "escalate": false,
+        "policy_number": "AUR-4308552",
+        "contains_pii": false,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0226",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 1.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 1.0,
+        "record_accuracy": 1.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 5021.2,
+      "output": {
+        "evidence": "Could you send me teh 80D certificate for policy my policy for teh last financial year?",
+        "category": "billing",
+        "urgency": 2,
+        "sentiment": "neutral",
+        "product": "unknown",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    },
+    {
+      "id": "T0008",
+      "metrics": {
+        "field.category": 1.0,
+        "field.urgency": 0.0,
+        "field.sentiment": 1.0,
+        "field.policy_number": 1.0,
+        "field.product": 1.0,
+        "field.escalate": 1.0,
+        "field.contains_pii": 1.0,
+        "field.language": 1.0,
+        "field_accuracy": 0.875,
+        "record_accuracy": 0.0,
+        "schema_valid": 1.0,
+        "needs_review": 0.0
+      },
+      "error": null,
+      "latency_ms": 6584.4,
+      "output": {
+        "evidence": "What is proportionate deduction and why does it apply to me?",
+        "category": "claims",
+        "urgency": 2,
+        "sentiment": "frustrated",
+        "product": "silver",
+        "language": "en",
+        "escalate": false,
+        "policy_number": null,
+        "contains_pii": true,
+        "needs_human_review": false,
+        "review_reason": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Lab-generated caches and traces (regenerated on every run, not deliverables)
+.aip_cache/
+.aip_traces/
+
+# OS
+.DS_Store

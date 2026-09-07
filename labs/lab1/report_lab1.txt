@@ -1,0 +1,56 @@
+3+ (gemini-3.5-flash-lite) but are planned for removal in a future release. Move sampling guidance into the `system` instructions instead.
+── lab1-c-test ── n=120  errors=68                          
+   error            1.0000
+   field_accuracy   0.9207
+   needs_review     0.0000
+   record_accuracy  0.5000
+   schema_valid     1.0000
+   error_rate       0.5667
+   cost_usd         0.0374   (p50 1149 ms / p95 1600 ms, 52 calls, 0 cached)
+
+confusion for 'category'  (rows = gold, cols = predicted)
+                       billing         claims      complaint    information  policy_change      technical
+billing                      5              .              .              .              .              .
+claims                       .             11              .              .              .              .
+complaint                    1              1              4              .              .              .
+information                  1              3              .              5              .              .
+policy_change                .              .              .              .             12              .
+technical                    .              .              .              .              .              9
+
+per-field accuracy (worst first):
+  field.urgency                0.712
+  field.sentiment              0.827
+  field.category               0.885
+  field.escalate               0.942
+  field.contains_pii           1.000
+  field.language               1.000
+  field.policy_number          1.000
+  field.product                1.000
+
+
+
+── lab1-b-dev ── n=60  errors=0
+   field_accuracy   0.9000
+   needs_review     0.0000
+   record_accuracy  0.5167
+   schema_valid     1.0000
+   error_rate       0.0000
+   cost_usd         0.0010   (p50 0 ms / p95 0 ms, 60 calls, 59 cached)
+
+confusion for 'category'  (rows = gold, cols = predicted)
+                       billing         claims      complaint    information  policy_change      technical
+billing                     10              .              .              .              .              .
+claims                       .              9              .              3              .              .
+complaint                    3              3              2              .              .              .
+information                  1              1              .              9              .              .
+policy_change                .              .              .              .             11              .
+technical                    .              .              .              .              .              8
+
+per-field accuracy (worst first):
+  field.urgency                0.700
+  field.category               0.817
+  field.sentiment              0.833
+  field.contains_pii           0.967
+  field.policy_number          0.983
+  field.language               1.000
+  field.product                1.000
