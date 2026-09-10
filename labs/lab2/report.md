@@ -23,7 +23,7 @@ column is misleading because it mostly reflects how much was cached.
 | `few_shot_reasoned` | 0.5435 | 0.9212 | 0.233 | 229.7 | 0.001533 | 2422 |
 | `cascade` | 0.5556 | 0.9306 | 0.400 | 119.6 | 0.002114 | 5798 |
 
-### 1. Which knob mattered more — prompt or model?
+### 1. Which knob mattered more, prompt or model?
 
 **Neither improved accuracy. The model choice only changed cost and speed.**
 
