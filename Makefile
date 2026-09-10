@@ -50,8 +50,8 @@ setup: venv
 	@$(MAKE) --no-print-directory _install
 
 _install:
-	$(PYTHON) -m pip install --upgrade pip
-	$(PYTHON) -m pip install -r requirements.txt
+	"$(PYTHON)" -m pip install --upgrade pip
+	"$(PYTHON)" -m pip install -r requirements.txt
 	@echo ""
 	@echo "Installed into $(PYTHON)"
 	@echo "Next: cp .env.example .env   and add one API key.  Then: make check"
@@ -59,48 +59,48 @@ _install:
 	@echo "To use python directly:  source $(VENV)/bin/activate"
 
 check:
-	@$(PYTHON) -c "import litellm" 2>/dev/null || { \
+	@"$(PYTHON)" -c "import litellm" 2>/dev/null || { \
 	  echo "Dependencies are not installed in $(PYTHON)."; \
 	  echo "Run:  make setup"; exit 1; }
-	$(PYTHON) scripts/check_setup.py
+	"$(PYTHON)" scripts/check_setup.py
 
 ratecheck:
-	$(PYTHON) scripts/check_rate_limit.py
+	"$(PYTHON)" scripts/check_rate_limit.py
 
 offline:
-	AIP_OFFLINE=1 $(PYTHON) scripts/check_setup.py
+	AIP_OFFLINE=1 "$(PYTHON)" scripts/check_setup.py
 
 data:
-	$(PYTHON) scripts/make_tickets.py
+	"$(PYTHON)" scripts/make_tickets.py
 
 primer:
-	@$(PYTHON) labs/lab1/pydantic_primer.py
+	@"$(PYTHON)" labs/lab1/pydantic_primer.py
 
 tickets:
-	@$(PYTHON) -c "import json,random; \
+	@"$(PYTHON)" -c "import json,random; \
 	rows=[json.loads(l) for l in open('data/eval/extraction_dev.jsonl')]; \
 	[print('='*70,'\n',r['expected'],'\n','-'*70,'\n',r['input'],sep='') \
 	 for r in random.sample(rows,5)]"
 
 test:
-	$(PYTHON) -m pytest tests/ -q
+	"$(PYTHON)" -m pytest tests/ -q
 
 lint:
-	$(PYTHON) -m ruff check aip/ labs/ scripts/ tests/
+	"$(PYTHON)" -m ruff check aip/ labs/ scripts/ tests/
 
 cost:
-	@$(PYTHON) -c "from aip import cache; from aip.cost import global_budget; \
+	@"$(PYTHON)" -c "from aip import cache; from aip.cost import global_budget; \
 	print('cached:', cache.stats()); print(global_budget().report())"
 
 docs:
-	$(PYTHON) -m pip install -q python-docx python-pptx
-	$(PYTHON) scripts/build_syllabus_docx.py
-	$(PYTHON) scripts/build_proposal_html.py
-	$(PYTHON) scripts/build_decks.py
-	$(PYTHON) scripts/build_html_decks.py
+	"$(PYTHON)" -m pip install -q python-docx python-pptx
+	"$(PYTHON)" scripts/build_syllabus_docx.py
+	"$(PYTHON)" scripts/build_proposal_html.py
+	"$(PYTHON)" scripts/build_decks.py
+	"$(PYTHON)" scripts/build_html_decks.py
 
 quiz:
-	$(PYTHON) scripts/build_quiz.py
+	"$(PYTHON)" scripts/build_quiz.py
 
 clean:
 	rm -rf .aip_traces .chroma .pytest_cache .ruff_cache
