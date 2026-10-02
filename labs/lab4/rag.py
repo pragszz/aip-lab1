@@ -216,8 +216,14 @@ def answer_question(question: str, retriever: Retriever, *, k: int = 12,
     `strict` is C4's second refusal setting -- same pipeline, stricter system
     instruction (see STRICT_CLAUSE), used to compare refusal recall/precision
     against the default at two operating points.
+
+    Lab 5 fix (mode 6, distractor dilution): `final_k` was accepted here but
+    never applied -- all `k` retrieved chunks reached the generator regardless
+    of `final_k`. Retrieve wide (`k`) for recall, then narrow to `final_k`
+    before generating, so the generator sees a focused shortlist instead of
+    every candidate.
     """
-    hits = retriever.search(question, k=k)
+    hits = retriever.search(question, k=k)[:final_k]
     context = format_context(hits, max_chars=8000)
     n_sources = _count_sources_in_context(context)
 

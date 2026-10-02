@@ -1,0 +1,210 @@
+[
+  {
+    "id": "Q04",
+    "kind": "single_hop",
+    "mode": 4,
+    "mode_name": "ranking",
+    "evidence": "A2: the chunk that holds the answer is pre-existing-conditions::m7 (rider reduces 36 months to 24 or 12, bought at inception or first renewal) and it ranks 21 -- in the top 30, outside the final 12. The rank-1 'gold chunk' m0 is a generic intro the lexical matcher picked; it holds none of the answer",
+    "question": "What is the waiting period for pre-existing diseases?",
+    "gold_answer": "36 months of continuous coverage. A rider can reduce it to 24 or 12 months if bought at inception or first renewal.",
+    "answer": "The waiting period for pre-existing diseases is generally **36 months** on retail, top-up/super top-up, and hospital cash benefit plans [3][5][7][9][10]. However, under the Aurora Senior Care plan for ages 60 and above, the pre-existing disease waiting period is **24 months** [5]. Additionally, wait",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 1,
+      "gold_chunk_ranks": {
+        "pre-existing-conditions::m7": 21,
+        "pre-existing-conditions::m0": 1
+      }
+    },
+    "auto_mode": 4,
+    "auto_evidence": "gold chunk in the final context (rank 1 of 12) yet wrong, while gold documents alone fix it -- the retrieved context, not the generator, is at fault. needs_human_check: confirm the chunk holds the whole answer (else mode 2)",
+    "human_checked": true,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q11",
+    "kind": "single_hop",
+    "mode": 6,
+    "mode_name": "generation",
+    "evidence": "handed the gold documents directly, the answer is still wrong -- generation, not retrieval",
+    "question": "How much ambulance cover is there?",
+    "gold_answer": "Rs 5,000 per hospitalisation for road ambulance on all plans. Gold and Platinum additionally cover air ambulance up to Rs 2,50,000 per year within India on prior authorisation.",
+    "answer": "Road ambulance is covered up to ₹5,000 per hospitalisation across all plans [1][6][9]. Additionally, under the Gold plan, air ambulance is covered up to ₹2,50,000 per policy year within India, subject to prior authorisation [5].",
+    "signals": {
+      "gold_context_fixes_it": false,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 1,
+      "gold_chunk_ranks": {
+        "plans-overview::m4": 1,
+        "plans-overview::m7": null
+      }
+    },
+    "auto_mode": 6,
+    "auto_evidence": "handed the gold documents directly, the answer is still wrong -- generation, not retrieval",
+    "human_checked": false,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q20",
+    "kind": "multi_hop",
+    "mode": 6,
+    "mode_name": "generation",
+    "evidence": "handed the gold documents directly, the answer is still wrong -- generation, not retrieval",
+    "question": "My mother is 63 and I want to add her to my policy. Which plans allow it and what changes?",
+    "gold_answer": "Dependent parents can be added on Silver (at extra premium), Gold and Platinum, but not on Bronze. Premium is set by the eldest member's age, and on Silver a 10% co-payment applies to every claim once the eldest insured is above 60. Aurora must present a separate senior-citizen policy as an alternative in writing.",
+    "answer": "You can add a dependent parent on the **Silver** (at an extra premium), **Gold**, and **Platinum** plans; the **Bronze** plan does not allow it [1]. \n\nAdding your 63-year-old mother will cause the following changes:\n- **Premium calculation:** Floater premium is determined by the age of the eldest me",
+    "signals": {
+      "gold_context_fixes_it": false,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 4,
+      "gold_chunk_ranks": {
+        "dependents-and-family-floater::m7": 4,
+        "plan-silver::m4": 8
+      }
+    },
+    "auto_mode": 6,
+    "auto_evidence": "handed the gold documents directly, the answer is still wrong -- generation, not retrieval",
+    "human_checked": false,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q23",
+    "kind": "multi_hop",
+    "mode": 2,
+    "mode_name": "chunk_boundary",
+    "evidence": "A2: the answer straddles outpatient-and-wellness::m0 ('not covered under the base plan on any tier ... The optional OPD rider covers them:') and ::m1 (the table row 'Bronze | Not available'). The chunker split the sentence from its table: m1 ranks 1, m0 ranks 17, and the generator got only the Bronze half",
+    "question": "Can I get an out-patient physiotherapy session reimbursed on Bronze?",
+    "gold_answer": "No. Out-patient treatment is not covered under any base plan, and the OPD rider is not available on Bronze.",
+    "answer": "The OPD (out-patient) rider is not available on the Bronze plan [1], though Bronze does include unlimited teleconsultation with empanelled general physicians [2]. The provided sources do not specifically mention coverage or reimbursement for out-patient physiotherapy sessions.",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 1,
+      "gold_chunk_ranks": {
+        "outpatient-and-wellness::m0": 17,
+        "outpatient-and-wellness::m1": 1
+      }
+    },
+    "auto_mode": 4,
+    "auto_evidence": "gold chunk in the final context (rank 1 of 12) yet wrong, while gold documents alone fix it -- the retrieved context, not the generator, is at fault. needs_human_check: confirm the chunk holds the whole answer (else mode 2)",
+    "human_checked": true,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q29",
+    "kind": "trap_archived",
+    "mode": 4,
+    "mode_name": "ranking",
+    "evidence": "A2: claims-timelines::m3 holds the whole answer ('Response to an Aurora query | 45 days') and is in context at rank 5. The answer gets 45 days right but adds a 30-day deadline from motor-claims-timelines (ranks 4 and 7): the chunk is complete, off-domain chunks outrank it",
+    "question": "How many days do I have to respond to a query Aurora raises on my claim?",
+    "gold_answer": "45 days from the date of the query, under the rules effective 1 April 2026. (The archived 2024 document says 30 days and must not be quoted for current policies.)",
+    "answer": "The deadline depends on the type of claim:\n\n* **General / Health reimbursement claims:** You have **45 days** from the date of the query to respond [2][5][11]. If not received within 45 days, Aurora closes the claim [2].\n* **Motor Insurance claims:** You have **30 days** from the date of the query t",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 5,
+      "gold_chunk_ranks": {
+        "claims-timelines::m0": null,
+        "claims-timelines::m3": 5
+      }
+    },
+    "auto_mode": 4,
+    "auto_evidence": "gold chunk in the final context (rank 5 of 12) yet wrong, while gold documents alone fix it -- the retrieved context, not the generator, is at fault. needs_human_check: confirm the chunk holds the whole answer (else mode 2)",
+    "human_checked": true,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q32",
+    "kind": "aggregation",
+    "mode": 2,
+    "mode_name": "chunk_boundary",
+    "evidence": "A2: the co-payment row ('| Co-payment | 20% above age 60 | 10% above age 60 | Nil | Nil |', plans-overview::m2) is in context at rank 4, but the header naming the columns Bronze/Silver/Gold/Platinum is in ::m1, which is not in the top 30. A table split from its header -- the row cannot be read",
+    "question": "Which plans have no co-payment?",
+    "gold_answer": "Gold and Platinum have nil co-payment at all ages. Bronze applies 20% and Silver 10% where the eldest insured is above 60.",
+    "answer": "Based on the provided sources, the plans with no co-payment are:\n\n* **Aurora Gold**: Has nil co-payment at all ages [1].\n* **Aurora Group Health (Corporate Plans)**: Two of the three plan variants feature nil co-payment [6].\n* **Aurora Silver**: Has no co-payment for insured members below the age of",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": false,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 26,
+      "gold_chunk_ranks": {
+        "plans-overview::m1": null,
+        "plans-overview::m7": 26
+      }
+    },
+    "auto_mode": 4,
+    "auto_evidence": "gold fact in the top 30 (rank 26) but outside the final 12 -- a ranking problem",
+    "human_checked": true,
+    "needs_human_check": false
+  },
+  {
+    "id": "Q35",
+    "kind": "aggregation",
+    "mode": 4,
+    "mode_name": "ranking",
+    "evidence": "gold chunk in the final context (rank 2 of 12) yet wrong, while gold documents alone fix it -- the retrieved context, not the generator, is at fault. needs_human_check: confirm the chunk holds the whole answer (else mode 2)",
+    "question": "List everything that is excluded relating to dental treatment.",
+    "gold_answer": "Dental treatment and oral surgery are excluded unless necessitated by accidental injury requiring hospitalisation. One dental check-up and cleaning per year is covered under the optional OPD rider.",
+    "answer": "Under Aurora plans, dental exclusions include:\n- Out-patient dental work is not covered by any plan [1].\n- Dental treatment and oral surgery are permanently excluded under indemnity plans, unless necessitated by an accidental injury requiring hospitalisation [2][3].",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": true,
+      "in_top_30": true,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": null,
+      "gold_rank": 2,
+      "gold_chunk_ranks": {
+        "exclusions::m2": 2,
+        "outpatient-and-wellness::m2": 18
+      }
+    },
+    "auto_mode": 4,
+    "auto_evidence": "gold chunk in the final context (rank 2 of 12) yet wrong, while gold documents alone fix it -- the retrieved context, not the generator, is at fault. needs_human_check: confirm the chunk holds the whole answer (else mode 2)",
+    "human_checked": false,
+    "needs_human_check": true
+  },
+  {
+    "id": "Q37",
+    "kind": "unanswerable",
+    "mode": 3,
+    "mode_name": "embedding_mismatch",
+    "evidence": "gold chunk is unreachable for the real question even at k=30, but retrieves itself when queried by its own text -- an embedding/query-mismatch, not a broken chunk",
+    "question": "Does Aurora cover treatment in Singapore, and up to what limit?",
+    "gold_answer": "PARTIAL REFUSE. The corpus states treatment outside India is excluded except under Platinum's international emergency benefit, but the limits and conditions of that benefit are in `plan-platinum-addendum`, which is not in the corpus. The system should say the benefit exists on Platinum and that the details are not available here.",
+    "answer": "I don't have enough information in the provided sources to answer that.",
+    "signals": {
+      "gold_context_fixes_it": true,
+      "in_final_k": false,
+      "in_top_30": false,
+      "dropped_by_reranker": false,
+      "chunk_self_retrievable": true,
+      "gold_rank": null,
+      "gold_chunk_ranks": {
+        "exclusions::m4": null,
+        "exclusions::m8": null
+      }
+    },
+    "auto_mode": 3,
+    "auto_evidence": "gold chunk is unreachable for the real question even at k=30, but retrieves itself when queried by its own text -- an embedding/query-mismatch, not a broken chunk",
+    "human_checked": false,
+    "needs_human_check": false
+  }
+]
