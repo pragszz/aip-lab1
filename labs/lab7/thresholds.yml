@@ -1,0 +1,28 @@
+# Lab 7 regression gate. Tune these to just below what you actually achieve --
+# a gate set at your current number fails on noise; a gate set far below it
+# never fires. Aim for roughly one standard error of headroom.
+#
+# Note that cost and latency have gates too. They regress silently otherwise.
+#
+# Measured 2026-10-05 on the 45-question golden set (reports/lab7_gate_baseline.json),
+# shipped config k=12 final_k=12, gemini MAIN, guard layers 1+2+5:
+#
+#   metric               measured   SE      floor/ceiling   why
+#   correctness          0.938      0.026   min 0.91        ~1 SE below
+#   faithfulness         0.911      0.042   min 0.87        ~1 SE below (0.90 sat 0.3 SE away)
+#   citation_validity    1.000      --      min 0.98        a single invalid citation in 45 fails
+#   refusal_recall       0.800      0.179   min 0.60        n=5: one flip = 0.20. 1 SE allows ONE lost
+#                                                           refusal; two fail. Weakest gate -- see report
+#   refusal_precision    1.000      --      min 0.75        4 declines; 2 wrongful refusals fail
+#   hit_rate_at_5        1.000      --      min 0.95        n=40: three misses fail
+#   cost_per_query_usd   0.0023     --      max 0.0030      +30%. MAIN->LARGE is ~2.4x and fails
+#   p95_latency_ms       5756       --      max 6000        this IS the uncached SLO; replayed, so
+#                                                           deterministic in CI
+correctness:        {min: 0.91}
+faithfulness:       {min: 0.87}
+citation_validity:  {min: 0.98}
+refusal_recall:     {min: 0.60}
+refusal_precision:  {min: 0.75}
+hit_rate_at_5:      {min: 0.95}
+cost_per_query_usd: {max: 0.0030}
+p95_latency_ms:     {max: 6000}

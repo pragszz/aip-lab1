@@ -1,3 +1,65 @@
+# Aurora Policy Assistant — Lab 7 service (run it in five minutes)
+
+A question-answering service over Aurora's 30 policy documents: grounded,
+cited answers, refusals when the documents are silent, a cost and a trace id
+on every response, and a CI gate that fails the build when answers get worse.
+Results and limits: [`EVALUATION_REPORT.md`](EVALUATION_REPORT.md).
+
+**Needs:** Python 3.11+, ~2 GB disk (PyTorch arrives with the retrieval stack).
+
+```bash
+git clone https://github.com/pragszz/aip-lab1.git && cd aip-lab1
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt                       # the FULL set; requirements-lab1.txt lacks FastAPI
+```
+
+### 1 · No API key: reproduce the numbers (≈1 min, $0)
+
+The committed replay cache (`.aip_cache/calls.sqlite3`, 6 MB) holds every model
+call the gate needs. Offline mode reads only from it and fails loudly on a miss.
+Caching must be on: if a `.env` sets `AIP_CACHE=0`, delete that line (with the
+cache off, offline mode cannot read the cache and fails at startup).
+
+```bash
+AIP_OFFLINE=1 python labs/lab7/gate.py --config labs/lab7/thresholds.yml    # GATE PASSED, exit 0
+AIP_OFFLINE=1 LAB7_FINAL_K=1 python labs/lab7/gate.py                         # the D3 break: GATE FAILED, exit 1
+```
+
+### 2 · With a key: run the service
+
+```bash
+echo "GEMINI_API_KEY=your-key-here" > .env            # free key: https://aistudio.google.com/apikey
+uvicorn labs.lab7.service:app --port 8000             # terminal 1
+streamlit run labs/lab7/ui.py                         # terminal 2 -> the demo UI
+streamlit run labs/lab7/dashboard.py                  # terminal 3 -> ops dashboard
+```
+
+No key? `AIP_OFFLINE=1 uvicorn labs.lab7.service:app --port 8000` still answers
+the 45 golden questions from the replay cache; anything else returns a 503.
+
+```bash
+curl -s localhost:8000/ask -H 'content-type: application/json' \
+     -d '{"question":"How many days do I have to submit a reimbursement claim after discharge?"}'
+curl -s localhost:8000/health        # index size, models, cache stats
+curl -s localhost:8000/metrics       # cost, cache hit rate, p50/p95/p99, errors by type, tools, alert
+curl -s localhost:8000/trace/<trace_id from /ask>   # why that request took as long as it did
+curl -N localhost:8000/ask/stream -H 'content-type: application/json' -d '{"question":"Is IVF covered?"}'
+```
+
+| Endpoint | What it is |
+|---|---|
+| `POST /ask` | `{question, top_k?, mode?: rag\|tools}` → answer, citations (with excerpts), sources, latency, **cost, trace id** |
+| `POST /ask/stream` | Server-sent events: `meta`, `token`…, then `validation` (`verified` or `replaced`) |
+| `GET /health`, `/metrics`, `/trace/{id}` | Operations |
+| Errors | 422 malformed · **503 + `Retry-After`** provider outage or 30 s deadline · **429** budget exhausted |
+
+Code: [`labs/lab7/`](labs/lab7/) — `service.py`, `pipeline.py` (Labs 3–6 wired
+together), `caching.py`, `traces.py`, `ui.py`, `dashboard.py`, `gate.py`,
+`thresholds.yml`, `semantic_sweep.py`, `ci_cache.py`. CI:
+[`.github/workflows/eval.yml`](.github/workflows/eval.yml).
+
+---
+
 # AI in Practice I — Module 1: Applied GenAI
 
 **Plaksha University · MS in Artificial Intelligence · Term 1**

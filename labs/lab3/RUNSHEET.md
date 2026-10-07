@@ -247,7 +247,7 @@ Then answer the question that matters:
 
 ---
 
-# 5 · Show & tell — 4 minutes per pair 
+# 5 · Show & tell — 4 minutes per pair
 
 1. Your final configuration and its numbers — 1 min
 2. Your per-kind table, and what it showed that the aggregate hid — 1 min

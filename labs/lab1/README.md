@@ -6,6 +6,11 @@
 >
 > **This file is the reasoning** — why each step exists and what it is teaching.
 > Read it before the lab; keep the runsheet open during it.
+>
+> **New to the lab? Start with [`OVERVIEW.md`](OVERVIEW.md)** — the short orientation:
+> why this lab exists, how to approach it, and where each piece comes from in
+> T1 and T2. Keep [`CONCEPTS.md`](CONCEPTS.md) open while you work —
+> every concept, where it is in the code, and where it came from.
 
 ---
 
@@ -327,7 +332,7 @@ Push to your repo under `labs/lab1/`:
    - top three error clusters with proposed fixes
    - the D5 economic argument
    - **one thing you tried that did not work**, and your explanation of why
-3. `reports/lab1_test.json` — the raw harness outputba
+3. `reports/lab1_test.json` — the raw harness output
 
 ---
 
