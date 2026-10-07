@@ -4,7 +4,7 @@
 #
 # Note that cost and latency have gates too. They regress silently otherwise.
 #
-# Measured 2026-10-05 on the 45-question golden set (reports/lab7_gate_baseline.json),
+# Measured 2026-10-05 on the 45-question golden set (reports/lab7_gate.json),
 # shipped config k=12 final_k=12, gemini MAIN, guard layers 1+2+5:
 #
 #   metric               measured   SE      floor/ceiling   why

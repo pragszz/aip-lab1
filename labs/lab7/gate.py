@@ -50,8 +50,10 @@ def measure() -> dict[str, float]:
     install_meter()
     # LAB7_FINAL_K exists for D3: the deliberate break is `LAB7_FINAL_K=1`.
     # LAB7_TIER evaluates a candidate generator (B4: SMALL vs MAIN).
-    cfg = PipelineConfig(final_k=int(os.getenv("LAB7_FINAL_K", "12")),
-                         tier=os.getenv("LAB7_TIER", "MAIN"))
+    # Defaults come from PipelineConfig, so the gate measures what the service
+    # ships: a regression committed to the config itself is caught too.
+    cfg = PipelineConfig(final_k=int(os.getenv("LAB7_FINAL_K", PipelineConfig.final_k)),
+                         tier=os.getenv("LAB7_TIER", PipelineConfig.tier))
     pipe = Pipeline(cfg)
     questions = load_questions(include_unanswerable=True)
 
